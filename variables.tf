@@ -18,7 +18,7 @@ variable "ip_configurations" {
     name                          = string
     subnet_id                     = string
     private_ip_address_allocation = string
-    private_ip_address            = string
+    private_ip_address            = optional(string,null)
   }))
   description = "(Required) ip settings block  "
 }
